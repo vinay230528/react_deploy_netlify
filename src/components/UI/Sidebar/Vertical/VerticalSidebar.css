@@ -1,0 +1,95 @@
+.sidedrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    background-color: white;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    box-shadow: -1px 0px 10px rgba(0,0,0,0.2);
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(100%);
+}
+
+.sidedrawer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidedrawer-content .box-50 {
+    padding: 10px;
+    width: 49%;
+}
+.sidedrawer-content .box-50 .icon-close {
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: #464646;
+    cursor: pointer;
+}
+.subTotal-content {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.bg-light {
+    background-color: #efe9e5;
+}
+.border-bottom{
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+}
+.sidedrawer-content h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #282828;
+    margin: 0px;
+}
+
+.list-padding {
+    padding: 5px 10px !important;
+}
+.list-padding span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #685c53;
+    margin: 0px;
+}
+.list-padding span.subTotal {
+    font-weight: 700;
+    color: #282828;
+}
+.txt-left {
+    text-align: left;
+}
+.txt-right {
+    text-align: right;
+}
+
+.btn-addToCart{
+    border: none;
+    padding: 12px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+    width: 98%;
+    background-color: #04aa6d;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}

@@ -1,0 +1,157 @@
+/*
+color code
+zomato: #cb202d
+w3Schools: #4CAF50 , #555555, rgba(76, 175, 80, 0.5)
+*/
+*{
+    transition: all 0.3s ease-in-out;
+}
+.Layout {
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+.Layout:before{
+    content: '';
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right top,
+            rgba(255, 255, 255, 0.9),
+            rgba(200, 200, 200, 0.5)),
+        url(../../assets/images/bg_texture1.jpg);
+    z-index: -1;
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    transition: all 0.3s ease-in-out;
+}
+.Layout:hover:before {
+    background-image: linear-gradient(to right top,
+        rgba(255, 255, 255, 0.5),
+        rgba(200, 200, 200, 0.5)),
+    url(../../assets/images/bg_texture1.jpg);
+    background-position: bottom;
+    transition: all 0.3s ease-in-out;
+}
+
+.Layout ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.Layout ul li {
+    width: 240px;
+    height: 140px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.Layout ul li a {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.Layout ul li.w3schools {
+    background-color:transparent;
+    border: 2px dashed #4CAF50;
+}
+
+.Layout ul li.zomato {
+    background-color: transparent;
+    border: 2px dashed #cb202d;
+}
+.Layout ul li.w3schools:hover, .Layout ul li.zomato:hover{
+    border: 2px dashed transparent;
+    transition: all 0.3s ease-in-out;
+}
+.Layout ul li.w3schools a {
+    color: #4CAF50;
+    transform: scale(1);
+}
+.Layout ul li.zomato a {
+    color: #cb202d;
+    transform: scale(1);
+}
+
+.Layout ul li.w3schools:hover a, .Layout ul li.zomato:hover a{
+    transform: scale(1.5);
+    color:#fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.Layout ul li.w3schools:before{
+    content: '';
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to right top,
+        rgba(255, 255, 255, 0.9),
+        rgba(200, 200, 200, 0.5)),
+    url(../../assets/images/bg_texture1.jpg); */
+    z-index: -1;
+    display: flex;
+    background-size: cover;
+    background-position: top;
+    transition: all 0.3s ease-in-out;
+}
+
+.Layout ul li.w3schools:hover:before{
+    background-image: linear-gradient(to right bottom,
+        rgba(76, 175, 80, 1), rgba(0, 0, 0, 0.8)),
+    url(../../assets/images/bg_codeWallpaper.jpg);
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.Layout ul li.zomato:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.9),
+            rgba(200, 200, 200, 0.5)),
+        url(../../assets/images/bg_texture1.jpg); */
+    z-index: -1;
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    transition: all 0.3s ease-in-out;
+}
+
+.Layout ul li.zomato:hover:before {
+    background-image: linear-gradient(to left top,
+        rgba(0, 0, 0, 0.8), rgba(203, 32, 45, 1)),
+        url(../../assets/images/bg_zomato.png);
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+

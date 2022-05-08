@@ -1,0 +1,144 @@
+.cardList-container{
+    width: 31.5%;
+    padding: 10px 8px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px;
+    box-shadow: 0px 3px 15px 1px rgba(10, 10, 10, 0);
+    border-radius: 8px;
+    border:1px solid rgba(230,230,230,0.2);
+    animation: fade-up 1s ease-in-out alternate;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+.cardList-container a {
+    text-decoration: none;
+    outline:none;
+    padding: 0;
+}
+.cardList-container:hover{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 5px 1px rgba(128, 128, 128, 0.2);
+}
+
+.thumbs-mdl {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.thumbs-mdl img {
+    width: 100%;
+    height: 100%;
+    outline:none;
+    background-size: 100% 100%;
+    background-position: top;
+    border-radius: 12px;
+    transform: scale(1);
+}
+.thumbs-mdl img:hover {
+    transform: scale(1.3);
+}
+.thumbs-mdl span.offer {
+    position: relative;
+    bottom: 50px;
+    z-index: 999;
+    background: rgba(37,111,239, 0.8);
+    padding: 1px 5px;
+    /* width: 70px; */
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    left: 0px;
+    display: flex;
+    float:left;
+    border-radius: 0px 5px 5px 0px;
+        
+}
+.thumbs-mdl span.timing {
+    position: relative;
+    bottom: 50px;
+    z-index: 999;
+    background: rgba(245,245,248,0.8);
+    padding: 2px 5px;
+    text-transform: uppercase;
+    color: #5b5b5b;
+    text-align: center;
+    right: 10px;
+    display: block;
+    float: right;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+/* card details: ==========================================================*/
+.card-summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-summary h3 {
+    width: 75%;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+    margin: 5px 5px 5px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display: block;
+    align-self: flex-start;
+}
+.card-summary span.ratings{
+    /* width: 15%; */
+    background-color: #24963F;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 8px;
+    display: flex;
+    align-self: center;
+}
+
+.card-summary h4 {
+    width: 60%;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999999;
+    margin: 0px 5px 0px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.card-summary span.amount {
+    /* width: 15%; */
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    color: #999;
+    display: flex;
+    align-self: center;
+}
+
+
+
+/* animation: =============================================================*/
+@keyframes fade-up {
+    0% {
+        transform: translateY(-5px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

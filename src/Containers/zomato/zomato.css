@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.zomato-container{
+    margin: 0px auto;
+    padding: 3% 5%;
+    width: 100%;
+}
+.zomato-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.zomato-heading {
+    font-size: 26px;
+    font-weight: 600;
+    color: #2d2d2d;
+    text-align: left;
+    margin: 0px auto 5px;
+    width: 100%;
+    padding-left: 15px;
+}
